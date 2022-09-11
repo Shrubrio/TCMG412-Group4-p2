@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Lipscomb, Landon: Personal Website</title>
+<!-Designed By: Lipscomb, Landon: Spring. 599->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Establish Overrall Format */
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+table, th, th {
+	border: 1px solid black;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #cccccc;
+  border: 20px solid #500000;
+  color: rgb(0, 0, 0);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #999999;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+	background-color: #4CAF50
+	color= white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.column{
+  flex: 33.3%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #646464;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #500000;
+  padding: 20px;
+  color: white;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #0f0e0e;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>A Wonderful Website</h1>
+</div>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="workhistory.html">Work History and Hobbies</a>
+  <a href="about.html">About</a>
+  <a href="WeatherApp.html">Weather App</a>
+  <address>
+  <a href="mailto:landon.lipscomb@tamu.edu" class="right">Contact Me</a>
+  </address>
+</div>
+
+<div class="main">
+    <h1>Ops Team</h1>
+	  <hr>  
+</div>
+
+<div class="centered">
+      <h2>JK Wallace</h2>
+      <img src="U:/public_html/media/JK.jpg" width="25%" height="auto">
+      <h2> -BIO GOES HERE- </h2>
+	  <hr>
+
+</div>
+<div class="split right">
+  <div class="centered">
+    <h2> Jared Ngai</h2>
+    <img src="U:public_html/media/jared.jpg" width="25%" height="auto">
+    <h2> Senior, Technology Management</h2>
+  </div>
+</div>
+
+<div class="main">
+    <h1>Dev Team</h1>
+	<hr>
+</div>
+<div class="row">
+    <div class="column">
+      <h2> Go see the world. </h2>
+      <img src="U:public_html/media/Buddhist Temple.jpg" style="width:100%">
+      </div>
+    <div class="column">
+     <h2> Dev Team Manager </h2>
+     <h3> Landon Lipscomb</h3>
+      <img src="U:public_html/media/Aggie Ring Order.jpg" style="width:100%">
+      <h2> Senior, Technology Management</h2>
+     <h3> Born and raised in College Station, I am currently a TA for TCMG 272 and have a huge passion for Technology.</h3>
+   </div>
+    <div class="column">
+      <br>
+      <h2> Nerd above all else. </h2>
+      <img src="U:public_html/media/Singaporelego.jpg" style="width:100%">
+    </div> 
+</div>
+
+<div class="footer">
+  <h3>Texas A&M University<br></h3>
+</div>
+</body>
+</html>

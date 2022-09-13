@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Lipscomb, Landon: Personal Website</title>
+<!-Designed By: Lipscomb, Landon: Spring. 599->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Establish Overrall Format */
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+table, th, th {
+	border: 1px solid black;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #cccccc;
+  border: 20px solid #500000;
+  color: rgb(0, 0, 0);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #999999;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+	background-color: #4CAF50
+	color= white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.column{
+  flex: 33.3%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #646464;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #500000;
+  padding: 20px;
+  color: white;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #0f0e0e;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>A Wonderful Website</h1>
+</div>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="AlexHartman.html">Alex Hartman</a> 
+  <a href="AllenHellums.html">Allen Hellums</a>
+  <a href="JaredNgai.html">Jared Ngai</a>
+  <a href="JK.html">JK Wallace</a>
+  <a href="LandonLipscomb.html">Landon Lipscomb</a>
+  <a href="ParkerPrudhome.html">Parker Prudhome</a>
+  <address>
+  <a href="mailto:landon.lipscomb@tamu.edu" class="right">Contact Me</a>
+  </address>
+</div>
+
+<div class="main">
+    <h1>Sentiment Analysis Using Python</h1>
+	  <hr>  
+</div>
+<div class="row">
+    <div class="column">
+        <h2> Don't actually have the time to code that so here is a turtle </h2>
+        <img src="turtle.jpg" alt="Turtle" style="width:100%">
+    </div>
+    <div class="column">
+        <h2> Download Python </h2>
+        <a href="https://www.python.org/downloads/">
+            <img src="snek.jpg" alt="snek logo" style="width:100%">
+        </a>
+    </div>
+    <div class="column">
+        <h2> download Pycharm Pro for free with tamu login </h2>
+        <a href="https://www.jetbrains.com/pycharm/download/#section=windows">
+            <img src="PyCharm.jpg" alt="PyCharm Logo" style="width:100%">
+        </a>
+    </div>
+</div>
+
+<div class="main">
+    <h1>The Man, The Myth, The Legend</h1>
+	<hr>
+</div>
+<div class="row">
+    <div class="column">
+      <h2> Go see the world. </h2>
+      <img src="Buddhist Temple.jpg" style="width:100%">
+      </div>
+    <div class="column">
+     <h2> Based </h2>
+     <h3> Landon Lipscomb</h3>
+      <img src="Aggie Ring Order.jpg" style="width:100%">
+      <h2> Senior, Technology Management</h2>
+     <h3> Born and raised in College Station, I am currently a TA for TCMG 272 and have a huge passion for Technology.</h3>
+   </div>
+    <div class="column">
+      <br>
+      <h2> Nerd above all else. </h2>
+      <img src="Singaporelego.jpg" style="width:100%">
+    </div> 
+</div>
+
+<div class="footer">
+  <h3>Texas A&M University<br></h3>
+</div>
+</body>
+</html>
